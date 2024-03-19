@@ -15,7 +15,7 @@ export default function App() {
   const [data, setData] = useState({})
 
   async function hendleShortLink() {
-    
+
     try {
 
       const response = await api.post('/shorten', {
@@ -30,7 +30,7 @@ export default function App() {
 
     } catch (error) {
       console.log({ msg: error.message })
-      alert("Ops, Parece que algo deu errado")
+      alert("Ops, Parece Que Algo Deu Errado")
       setLink('')
     }
   }
