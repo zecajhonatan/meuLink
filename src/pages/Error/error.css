@@ -1,0 +1,46 @@
+.container-error {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-error img {
+  width: 250px;
+  margin: 30px auto;
+  animation: sheke 5s;
+}
+
+/* Animação sheke */
+
+@keyframes sheke {
+  10%, 90% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.container-error h1 {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.container-error a {
+  background-color: #fff;
+  color: #132748;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 4px;
+  font-weight: bold;
+}
